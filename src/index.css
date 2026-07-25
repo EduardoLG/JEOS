@@ -93,9 +93,9 @@
     --system-blue: oklch(0.552 0.171 254.6);
 
     /* Superficies de vidrio (glassmorphism) */
-    --glass-surface: oklch(1 0 0 / 55%);
-    --glass-surface-strong: oklch(1 0 0 / 78%);
-    --glass-border: oklch(1 0 0 / 45%);
+    --glass-surface: oklch(1 0 0 / 86%);
+    --glass-surface-strong: oklch(1 0 0 / 94%);
+    --glass-border: oklch(1 0 0 / 55%);
     --glass-highlight: oklch(1 0 0 / 90%);
 }
 
@@ -134,10 +134,10 @@
 
     --system-blue: oklch(0.685 0.152 254.6);
 
-    --glass-surface: oklch(0.22 0.006 264 / 55%);
-    --glass-surface-strong: oklch(0.22 0.006 264 / 80%);
-    --glass-border: oklch(1 0 0 / 8%);
-    --glass-highlight: oklch(1 0 0 / 6%);
+    --glass-surface: oklch(0.22 0.006 264 / 88%);
+    --glass-surface-strong: oklch(0.22 0.006 264 / 95%);
+    --glass-border: oklch(1 0 0 / 12%);
+    --glass-highlight: oklch(1 0 0 / 8%);
 }
 
 /* Scrollbars delgadas y translúcidas dentro del escritorio (siempre en modo dark) */
