@@ -36,10 +36,20 @@ export function ProjectCard({ project }: ProjectCardProps) {
 
       <p className="mt-2 text-sm text-foreground/80">{project.description}</p>
 
-      <div className="mt-4 flex h-24 items-center justify-center gap-2 rounded-xl border border-dashed border-white/15 text-xs text-muted-foreground">
-        <ImageOff className="size-3.5" />
-        Capturas pendientes de agregar
-      </div>
+      {project.image ? (
+        <div className="mt-4 overflow-hidden rounded-xl ring-1 ring-white/10">
+          <img
+            src={project.image}
+            alt={`Captura de ${project.name}`}
+            className="h-40 w-full object-cover"
+          />
+        </div>
+      ) : (
+        <div className="mt-4 flex h-24 items-center justify-center gap-2 rounded-xl border border-dashed border-white/15 text-xs text-muted-foreground">
+          <ImageOff className="size-3.5" />
+          Capturas pendientes de agregar
+        </div>
+      )}
 
       {project.technologies.length > 0 && (
         <div className="mt-4 flex flex-wrap gap-1.5">

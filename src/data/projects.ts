@@ -1,3 +1,5 @@
+import novapayLogin from '@/assets/projects/novapay/login.png'
+
 export interface Project {
   id: string
   name: string
@@ -5,6 +7,7 @@ export interface Project {
   technologies: string[]
   learnings: string[]
   githubUrl: string | null
+  image?: string
 }
 
 export const projects: Project[] = [
@@ -14,7 +17,8 @@ export const projects: Project[] = [
     description: 'Sistema financiero desarrollado durante formación académica.',
     technologies: ['React', 'Backend', 'Base de datos', 'Docker'],
     learnings: [],
-    githubUrl: null,
+    githubUrl: 'https://github.com/marcss-bnajera/NovaPay',
+    image: novapayLogin,
   },
   {
     id: 'bite-go',
@@ -22,7 +26,7 @@ export const projects: Project[] = [
     description: 'Sistema gestor para restaurantes.',
     technologies: [],
     learnings: [],
-    githubUrl: null,
+    githubUrl: 'https://github.com/marcss-bnajera/Bite-GO',
   },
   {
     id: 'gesap',
@@ -30,6 +34,6 @@ export const projects: Project[] = [
     description: 'Sistema de gestión de salud.',
     technologies: [],
     learnings: [],
-    githubUrl: null,
+    githubUrl: 'https://github.com/marcss-bnajera/GESAP',
   },
 ]

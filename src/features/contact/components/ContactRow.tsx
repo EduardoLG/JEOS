@@ -1,4 +1,4 @@
-import { Briefcase, Globe, Link2, Mail } from 'lucide-react'
+import { Globe, Link2, Mail } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
 import type { ContactLink } from '@/data/contact'
 
@@ -6,7 +6,6 @@ const ICONS: Record<ContactLink['id'], LucideIcon> = {
   email: Mail,
   github: Link2,
   linkedin: Globe,
-  computrabajo: Briefcase,
 }
 
 interface ContactRowProps {

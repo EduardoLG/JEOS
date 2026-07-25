@@ -31,6 +31,11 @@ export function TimelineItem({ item, isLast, delay }: TimelineItemProps) {
             {item.institution}
           </p>
         )}
+        {item.description && (
+          <p className="mt-1.5 max-w-md text-xs text-foreground/70">
+            {item.description}
+          </p>
+        )}
       </div>
     </motion.div>
   )
